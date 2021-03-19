@@ -5,19 +5,22 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 
 import { getSortedPostsData } from '../lib/posts'
+import { getChessStats } from '../lib/chess'
 
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
+  const chessStats = await getChessStats();
   return {
     props: {
       allPostsData,
+      chessStats
     }
   }
 }
 
 
-export default function Home({ allPostsData, rating }) {
+export default function Home({ allPostsData, chessStats }) {
   return (
     <Layout home>
       <Head>
@@ -42,9 +45,10 @@ export default function Home({ allPostsData, rating }) {
           ))}
         </ul>
       </section>
-      <Link href="/posts/first-post">
-        <a>Posts</a>
-      </Link>
+      <section>
+
+        <h3 className={utilStyles.headingMd}> {chessStats["chess_rapid"]["last"]["rating"]}</h3>
+      </section>
 
 
     </Layout>
