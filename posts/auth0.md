@@ -1,5 +1,5 @@
 ---
-title: 'User Authentication by Email Invite with Django and Auth0 '
+title: 'User Auth by Email Invite with Auth0 and Django'
 date: '2021-03-19'
 ---
 
