@@ -46,7 +46,6 @@ export default function Home({ allPostsData, chessStats }) {
         </ul>
       </section>
       <section>
-
         <h3 className={utilStyles.headingMd}> {chessStats["chess_rapid"]["last"]["rating"]}</h3>
       </section>
 
