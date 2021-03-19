@@ -1,30 +1,14 @@
 import Head from 'next/head'
-import Link from 'next/link'
 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons' 
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons' 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import Date from '../components/date'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
-import { getChessStats } from '../lib/chess'
 
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  const chessStats = await getChessStats();
-  return {
-    props: {
-      allPostsData,
-      chessStats
-    }
-  }
-}
-
-
-export default function Home({ allPostsData, chessStats }) {
+export default function Home({  chessStats }) {
   return (
     <Layout home>
       <Head>
@@ -51,25 +35,6 @@ export default function Home({ allPostsData, chessStats }) {
             </a>
           </li>
         </ul>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a >{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-          </li>
-          ))}
-        </ul>
-      </section>
-      <section>
-        <h3 className={utilStyles.headingMd}> {chessStats["chess_rapid"]["last"]["rating"]}</h3>
       </section>
     </Layout>
   )

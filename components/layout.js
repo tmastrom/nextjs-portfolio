@@ -23,6 +23,17 @@ export default function Layout({ children, home }) {
                 />
                 <meta name="og:title" content={siteTitle} />
             </Head>
+            <div>
+            <Link href="/">
+                Home
+            </Link>
+            <Link href="/blog"> 
+                Blog
+            </Link>
+            <Link href="/stats"> 
+                Stats
+            </Link>
+            </div>
             <header className={styles.header}>
                 {home ? (
                 <>
