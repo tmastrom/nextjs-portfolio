@@ -59,7 +59,7 @@
   height: 25px;
   width: 25px;
   margin: 25px;
-  transition: transform 500ms;
+  transition: transform 200ms;
 }
 
 .iconcolour {

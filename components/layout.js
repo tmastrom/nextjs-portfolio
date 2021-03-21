@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import NavBar from './navbar'
 
 const name = 'Tom Mastromonaco'
 export const siteTitle = "Tom Mastromonaco"
@@ -23,17 +24,7 @@ export default function Layout({ children, home }) {
                 />
                 <meta name="og:title" content={siteTitle} />
             </Head>
-            <div>
-            <Link href="/">
-                Home
-            </Link>
-            <Link href="/blog"> 
-                Blog
-            </Link>
-            <Link href="/stats"> 
-                Stats
-            </Link>
-            </div>
+            <NavBar/>
             <header className={styles.header}>
                 {home ? (
                 <>

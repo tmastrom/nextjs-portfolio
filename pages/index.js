@@ -8,7 +8,7 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 
 
-export default function Home({  chessStats }) {
+export default function Home() {
   return (
     <Layout home>
       <Head>
