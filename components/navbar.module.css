@@ -1,0 +1,13 @@
+.container {
+    max-width: 36rem;
+    padding: 0 1rem;
+    margin: 3rem auto 6rem;
+}
+
+.centerElement {
+    text-align: center;
+}
+  
+.element {
+    margin: 25px;
+}

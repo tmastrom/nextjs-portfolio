@@ -1,27 +1,23 @@
 
-import utilStyles from '../styles/utils.module.css'
-import styles from './layout.module.css'
-
+import styles from './navbar.module.css'
 import Link from 'next/link'
-
 
 export default function NavBar() {
     return (
         <div className={styles.container}>
-
-            <section className={`${utilStyles.centerText}`}>
+            <section className={styles.centerElement}>
                 <ul>
-                <li className={`${utilStyles.icon}`}>
+                <li className={styles.element}>
                     <Link href="/">
                         Home
                     </Link>
                 </li>
-                <li className={utilStyles.icon}>
+                <li className={styles.element}>
                     <Link href="/blog"> 
                         Blog
                     </Link>
                 </li>
-                <li className={utilStyles.icon}>
+                <li className={styles.element}>
                     <Link href="/stats"> 
                         Stats
                     </Link>
