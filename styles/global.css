@@ -12,11 +12,12 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  background-color: #fefae0;
 }
 
 
 a {
-  color: #0070f3;
+  color: #606c38;
   text-decoration: none;
 }
 

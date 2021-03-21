@@ -15,16 +15,16 @@ export async function getStaticProps() {
 
 export default function Stats({  chessStats }) {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
 
       <section>
-      <h3 className={utilStyles.headingMd}>Blitz Chess Rating: {chessStats["chess_blitz"]["last"]["rating"]}</h3>
-      <h3 className={utilStyles.headingMd}>Rapid Chess Rating: {chessStats["chess_rapid"]["last"]["rating"]}</h3>
-      <p className={utilStyles.iconcolour}> These stats are updated live using the Chess.com API</p>
-    </section>
+        <p className={utilStyles.centerText}>Blitz Chess Rating: {chessStats["chess_blitz"]["last"]["rating"]}</p>
+        <p className={utilStyles.centerText}>Rapid Chess Rating: {chessStats["chess_rapid"]["last"]["rating"]}</p>
+        <p className={`${utilStyles.lightText} ${utilStyles.centerText}`}> These stats are updated live using the Chess.com API</p>
+      </section>
 
     </ Layout>
   )
