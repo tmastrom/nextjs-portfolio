@@ -21,8 +21,8 @@ export default function Stats({  chessStats }) {
       </Head>
 
       <section>
-        <p className={utilStyles.centerText}>Blitz Chess Rating: {chessStats["chess_blitz"]["last"]["rating"]}</p>
-        <p className={utilStyles.centerText}>Rapid Chess Rating: {chessStats["chess_rapid"]["last"]["rating"]}</p>
+        <p className={utilStyles.centerText}>Blitz Chess Rating <strong>{chessStats["chess_blitz"]["last"]["rating"]}</strong></p>
+        <p className={utilStyles.centerText}>Rapid Chess Rating: <strong>{chessStats["chess_rapid"]["last"]["rating"]}</strong></p>
         <p className={`${utilStyles.lightText} ${utilStyles.centerText}`}> These stats are updated live using the Chess.com API</p>
       </section>
 
