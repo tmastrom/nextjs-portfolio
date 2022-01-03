@@ -12,11 +12,11 @@ export default function NavBar() {
                         Home
                     </Link>
                 </li>
-                <li className={styles.element}>
+                {/* <li className={styles.element}>
                     <Link href="/blog"> 
                         Blog
                     </Link>
-                </li>
+                </li> */}
                 <li className={styles.element}>
                     <Link href="/stats"> 
                         Stats

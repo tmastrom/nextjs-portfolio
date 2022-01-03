@@ -16,7 +16,7 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p className={utilStyles.centerText} >Developer @ <a href="https://audette.io/" alt="Audette homepage" target="_blank" rel="noreferrer">Audette</a></p>
+        <p className={utilStyles.centerText} >Software Engineer @ <a href="https://audette.io/" alt="Audette homepage" target="_blank" rel="noreferrer">Audette</a></p>
       </section>
       <section className={`${utilStyles.centerText}`}>
         <ul>
