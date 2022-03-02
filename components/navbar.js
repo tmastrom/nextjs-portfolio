@@ -22,6 +22,11 @@ export default function NavBar() {
                         Stats
                     </Link>
                 </li>
+                <li className={styles.element}>
+                    <Link href="/photography"> 
+                        Photography
+                    </Link>
+                </li>
                 </ul>
             </section>
         </div>
