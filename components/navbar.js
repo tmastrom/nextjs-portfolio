@@ -22,11 +22,11 @@ export default function NavBar() {
                         Stats
                     </Link>
                 </li>
-                <li className={styles.element}>
+                {/* <li className={styles.element}>
                     <Link href="/photography"> 
                         Photography
                     </Link>
-                </li>
+                </li> */}
                 </ul>
             </section>
         </div>
