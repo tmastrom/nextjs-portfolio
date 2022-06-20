@@ -16,7 +16,7 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p className={utilStyles.centerText} >Software Engineer </p>
+        <p className={utilStyles.centerText} >Software Engineer based in Vancouver, BC</p>
       </section>
       <section className={`${utilStyles.centerText}`}>
         <ul>
@@ -26,12 +26,12 @@ export default function Home() {
             </a>
           </li>
           <li className={utilStyles.icon}>
-            <a href="https://www.linkedin.com/in/tmastro/" alt="linkedin profile link" target="_blank" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/tmastro/" alt="linkedin profile link" target="_blank" rel="noreferrer">
               <FontAwesomeIcon className={utilStyles.iconcolour} icon={faLinkedin}/>
             </a>
           </li>
           <li className={utilStyles.icon}>
-            <a href="thomas.mastromonaco@gmail.com" alt="email link" target="_blank" target="_blank" rel="noreferrer">
+            <a href="thomas.mastromonaco@gmail.com" alt="email link" target="_blank" rel="noreferrer">
               <FontAwesomeIcon className={utilStyles.iconcolour} icon={faEnvelope}/>
             </a>
           </li>
