@@ -4,7 +4,7 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getChessStats } from '../lib/chess'
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const chessStats = await getChessStats();
   return {
     props: {
