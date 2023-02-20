@@ -12,21 +12,11 @@ export default function NavBar() {
                         Home
                     </Link>
                 </li>
-                {/* <li className={styles.element}>
-                    <Link href="/blog"> 
-                        Blog
-                    </Link>
-                </li> */}
                 <li className={styles.element}>
-                    <Link href="/stats"> 
-                        Stats
+                    <Link href="/chess">
+                        Chess
                     </Link>
                 </li>
-                {/* <li className={styles.element}>
-                    <Link href="/photography"> 
-                        Photography
-                    </Link>
-                </li> */}
                 </ul>
             </section>
         </div>
